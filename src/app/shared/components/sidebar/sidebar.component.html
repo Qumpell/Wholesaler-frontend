@@ -1,0 +1,26 @@
+<mat-toolbar>
+  <button mat-icon-button (click)="toggleSidebar()">
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" opened="false">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/users">
+        <mat-icon>person</mat-icon>
+        <span>Users</span>
+      </a>
+      <a mat-list-item routerLink="/companies">
+        <mat-icon>business</mat-icon>
+        <span>Companies</span>
+      </a>
+      <a mat-list-item routerLink="/roles">
+        <mat-icon>security</mat-icon>
+        <span>Roles</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- Main content goes here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

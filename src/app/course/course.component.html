@@ -1,0 +1,12 @@
+<h1>Hello</h1>
+<p>{{price}}</p>
+@if(!isAvailable){
+    <p>Test</p>
+}
+<button (click)="toggleAvailability()">CHange</button>
+<p *ngIf="isAvailable">sss</p>
+<ul>
+    <li *ngFor="let product of products">
+        {{ product.name | uppercase }} - {{ product.price | currency: 'PLN': 'symbol' : '1.2-2'}}
+    </li>
+</ul>

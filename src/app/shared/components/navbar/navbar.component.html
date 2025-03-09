@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+  <!-- Logo lub nazwa aplikacji -->
+  <span class="app-name">Wholesaler</span>
+
+  <!-- Przestrzeń rozdzielająca -->
+  <span class="spacer"></span>
+
+  <!-- Linki nawigacyjne -->
+  <a mat-button routerLink="/">Home</a>
+  <a mat-button routerLink="/about">Users</a>
+  <a mat-button routerLink="/contact">Kontakt</a>
+  <a mat-button routerLink="/contact">Kontakt</a>
+  <a mat-button routerLink="/contact">Kontakt</a>
+  <a mat-button routerLink="/contact">Kontakt</a>
+
+  <!-- Menu użytkownika -->
+  <button mat-icon-button [matMenuTriggerFor]="userMenu">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <mat-menu #userMenu="matMenu">
+    <button mat-menu-item>Profil</button>
+    <button mat-menu-item>Wyloguj</button>
+  </mat-menu>
+</mat-toolbar>
